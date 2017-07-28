@@ -1,5 +1,5 @@
 {
-  "name": "invariant",
+  "name": "@octetstream/invariant",
   "description": "Declarative errors throwing for Node.js",
   "version": "1.0.0",
   "main": "invariant.js",
