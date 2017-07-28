@@ -11,7 +11,7 @@ Declarative errors throwing for Node.js
 
 This library have a two, a little bit different APIs:
 
-### invatiant(predicate, message[...format])
+### invatiant(predicate, message[, ...format])
 
   - **boolean** predicate – a result of some condition
   - **string** message – an error message
