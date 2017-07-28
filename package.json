@@ -4,7 +4,13 @@
   "version": "1.0.0",
   "main": "invariant.js",
   "author": "Nick K.",
-  "license": "MIT","repository": {
+  "license": "MIT",
+  "keywords": [
+    "invariant",
+    "test",
+    "errors"
+  ],
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/octet-stream/invariant.git"
   },
