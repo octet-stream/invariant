@@ -15,7 +15,7 @@ This library have a two, a little bit different APIs:
 
   - **boolean** predicate – a result of some condition
   - **string** message – an error message
-  – *any* format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
+  - **any** format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
 
 ### invariant(predicate, Error, message[, ...format])
   - **Function** Error – custom error class that will be used as an error constructor
