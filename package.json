@@ -1,0 +1,21 @@
+{
+  "name": "invariant",
+  "description": "Declarative errors throwing for Node.js",
+  "version": "1.0.0",
+  "main": "invariant.js",
+  "author": "Nick K.",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.isfunction": "3.0.8",
+    "lodash.isstring": "4.0.1",
+    "sprintf-js": "1.1.1"
+  },
+  "devDependencies": {
+    "@octetstream/eslint-config": "1.0.1",
+    "ava": "0.21.0",
+    "codecov": "2.2.0",
+    "eslint": "3.19.x",
+    "husky": "0.14.3",
+    "nyc": "11.0.3"
+  }
+}
