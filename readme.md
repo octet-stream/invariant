@@ -23,7 +23,7 @@ This library have a two, a little bit different APIs:
 ## Example
 
 ```js
-  import invatiant from "@octetstream/invariant"
+  import invariant from "@octetstream/invariant"
 
   // some of your code...
 
