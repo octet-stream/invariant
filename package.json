@@ -26,7 +26,7 @@
     "report:ci": "node_modules/.bin/nyc report --reporter=lcov yarn test",
     "ci": "yarn coverage && yarn report:ci && yarn codecov",
     "precommit": "yarn lint",
-    "prepush": "yarn coverage && yarn report"
+    "prepush": "yarn report"
   },
   "engines": {
     "node": ">=7.6"
