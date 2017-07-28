@@ -18,7 +18,7 @@ This library have a two, a little bit different APIs:
   – *any* format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
 
 ### invariant(predicate, Error, message[, ...format])
-  – **Function** Error – custom error class that will be used as an error constructor
+  - **Function** Error – custom error class that will be used as an error constructor
 
 ## Example
 
