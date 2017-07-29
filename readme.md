@@ -9,7 +9,7 @@ Declarative errors throwing for Node.js
 
 ## API
 
-This library have a two, a little bit different APIs:
+This library have two little bit different APIs:
 
 ### invatiant(predicate, message[, ...format])
 
