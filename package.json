@@ -1,7 +1,7 @@
 {
   "name": "@octetstream/invariant",
   "description": "Declarative errors throwing for Node.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "invariant.js",
   "author": "Nick K.",
   "license": "MIT",

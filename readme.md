@@ -13,7 +13,7 @@ This library have a two, a little bit different APIs:
 
 ### invatiant(predicate, message[, ...format])
 
-  - **boolean** predicate – a result of some condition
+  - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
   - **string** message – an error message
   - **any** format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
 
@@ -27,6 +27,6 @@ This library have a two, a little bit different APIs:
 
   // some of your code...
 
-  // Will threw a TypeError
-  invariant(typeof foo === "string", TypeError, "Foo should be a string, but given type is: %s", typeof foo)
+  // Will threw a TypeError if "value" is not a string
+  invariant(typeof value !== "string", TypeError, "Foo should be a string, but given type is: %s", typeof foo)
 ```
