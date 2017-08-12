@@ -28,5 +28,5 @@ This library have two little bit different APIs:
   // some of your code...
 
   // Will threw a TypeError if "value" is not a string
-  invariant(typeof value !== "string", TypeError, "Foo should be a string, but given type is: %s", typeof foo)
+  invariant(typeof value !== "string", TypeError, "Foo should be a string, but given type is: %s", typeof value)
 ```
