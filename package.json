@@ -1,7 +1,7 @@
 {
   "name": "@octetstream/invariant",
   "description": "Declarative errors throwing for Node.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "invariant.js",
   "author": "Nick K.",
   "license": "MIT",
@@ -29,7 +29,7 @@
     "prepush": "yarn report"
   },
   "engines": {
-    "node": ">=7.6"
+    "node": ">=6"
   },
   "dependencies": {
     "lodash.isfunction": "3.0.8",
