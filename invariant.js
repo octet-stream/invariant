@@ -1,6 +1,6 @@
+const {isFunction, isString} = require("util")
+
 const fmt = require("sprintf-js").sprintf
-const isFunction = require("lodash.isfunction")
-const isString = require("lodash.isstring")
 
 /**
  * @param boolean predicate

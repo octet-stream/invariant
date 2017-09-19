@@ -10,13 +10,7 @@
     "test",
     "errors"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/octet-stream/invariant.git"
-  },
-  "bugs": {
-    "url": "https://github.com/octet-stream/invariant/issues"
-  },
+  "repository": "octet-stream/invariant",
   "scripts": {
     "lint": "node_modules/.bin/eslint test.js invariant.js",
     "test": "node_modules/.bin/ava test.js",
@@ -32,8 +26,6 @@
     "node": ">=6"
   },
   "dependencies": {
-    "lodash.isfunction": "3.0.8",
-    "lodash.isstring": "4.0.1",
     "sprintf-js": "1.1.1"
   },
   "devDependencies": {
