@@ -3,9 +3,11 @@ const {isFunction, isString} = require("util")
 const fmt = require("sprintf-js").sprintf
 
 /**
- * @param boolean predicate
- * @param string|Function Err
- * @param any ...format
+ * @param {boolean} predicate
+ * @param {string|Function} Err
+ * @param {any} ...format
+ *
+ * @throws {any} given Err when predicate is "true"
  */
 function invariant(predicate, Err, ...format) {
   if (Boolean(predicate) === false) {
