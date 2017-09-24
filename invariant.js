@@ -1,5 +1,3 @@
-const {isFunction, isString} = require("util")
-
 const fmt = require("sprintf-js").sprintf
 
 /**
@@ -14,11 +12,11 @@ function invariant(predicate, Err, ...format) {
     return
   }
 
-  if (isString(Err)) {
+  if (typeof Err === "string") {
     throw new Error(fmt(Err, ...format))
   }
 
-  if (isFunction(Err)) {
+  if (typeof Err === "function") {
     const message = format.shift()
 
     throw new Err(fmt(message, ...format))
