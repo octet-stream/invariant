@@ -11,14 +11,21 @@ Declarative errors throwing for Node.js
 
 This library have two little bit different APIs:
 
-### invatiant(predicate, message[, ...format])
+### `invariant(predicate, error)`
+  - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
+  - **object** error – some error object
+
+### `invatiant(predicate, message[, ...format])`
 
   - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
   - **string** message – an error message
   - **any** format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
 
-### invariant(predicate, Error, message[, ...format])
+### `invariant(predicate, Error, message[, ...format])`
+  - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
   - **Function** Error – custom error class that will be used as an error constructor
+  - **string** message – an error message
+  - **any** format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
 
 ## Example
 
