@@ -36,4 +36,8 @@ This library have two little bit different APIs:
 
   // Will threw a TypeError if "value" is not a string
   invariant(typeof value !== "string", TypeError, "The value should be a string, but given type is: %s", typeof value)
+
+  invariant(typeof value !== "string", "The value should be a string, but given type is: %s", typeof value)
+
+  invariant(typeof value !== "string", new TypeError(`The value should be a string, but given type is: ${typeof value}`))
 ```

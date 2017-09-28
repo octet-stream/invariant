@@ -2,8 +2,8 @@ const fmt = require("sprintf-js").sprintf
 
 /**
  * @param {boolean} predicate
- * @param {string|Function} Err
- * @param {any} ...format
+ * @param {string | Function} Err
+ * @param {any[]} ...format
  *
  * @throws {any} given Err when predicate is "true"
  */
