@@ -9,7 +9,7 @@ Declarative errors throwing for Node.js
 
 ## API
 
-This library have two little bit different APIs:
+This library have three little bit different APIs:
 
 ### `invariant(predicate, error)`
   - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
