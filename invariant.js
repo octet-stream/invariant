@@ -9,7 +9,7 @@ const fmt = require("sprintf-js").sprintf
  */
 function invariant(predicate, Err, ...format) {
   if (Boolean(predicate) === false) {
-    return
+    return undefined
   }
 
   if (typeof Err === "string") {
@@ -25,5 +25,17 @@ function invariant(predicate, Err, ...format) {
   throw Err
 }
 
+function reject(predicate, Err, ...format) {
+  try {
+    invariant(predicate, Err, ...format)
+
+    return Promise.resolve(undefined)
+  } catch (error) {
+    return Promise.reject(error)
+  }
+}
+
+invariant.reject = reject
 module.exports = invariant
+module.exports.reject = reject
 module.exports.default = invariant

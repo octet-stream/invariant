@@ -10,6 +10,22 @@ test("Should not throw an error when predicate is false", t => {
   t.notThrows(trap)
 })
 
+test("invariant.reject should return a Promise", async t => {
+  t.plan(1)
+
+  const promise = invariant.reject(false, "Have no errors")
+
+  t.true(promise instanceof Promise)
+
+  await promise
+})
+
+test("invariant.reject shold resolve undefined when predicate is false", t => {
+  t.plan(1)
+
+  return t.notThrows(invariant.reject(false, "Have no errors"))
+})
+
 test("Should throw an Error when the second argument is a string", t => {
   t.plan(4)
 
@@ -59,3 +75,15 @@ test("Should throw an error with given class", t => {
   t.true(err instanceof SomeError)
   t.is(err.message, "Some foo error message.")
 })
+
+test(
+  "invariant.reject should reject promise when predicate is true",
+  async t => {
+    t.plan(3)
+
+    const err = await t.throws(invariant.reject(true, "Something's wrong..."))
+
+    t.true(err instanceof Error)
+    t.is(err.message, "Something's wrong...")
+  }
+)

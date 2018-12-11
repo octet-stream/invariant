@@ -26,14 +26,14 @@
     "node": ">=6"
   },
   "dependencies": {
-    "sprintf-js": "1.1.1"
+    "sprintf-js": "1.1.2"
   },
   "devDependencies": {
-    "@octetstream/eslint-config": "2.1.0",
+    "@octetstream/eslint-config": "3.0.0",
     "ava": "0.25.0",
-    "codecov": "3.0.2",
-    "eslint": "4.19.1",
-    "husky": "0.14.3",
-    "nyc": "12.0.2"
+    "codecov": "3.1.0",
+    "eslint": "5.10.0",
+    "husky": "1.2.0",
+    "nyc": "13.1.0"
   }
 }
