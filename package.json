@@ -23,7 +23,7 @@
     "prepush": "yarn report"
   },
   "engines": {
-    "node": ">=6"
+    "node": "6.x || >= 8"
   },
   "dependencies": {
     "sprintf-js": "1.1.2"
