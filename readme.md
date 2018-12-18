@@ -25,7 +25,7 @@ Declarative errors throwing for Node.js
   - **string** message – an error message
   - **any** format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
 
-### `invariant.reject(predicate, Error, message[, ...format]) -> {Promise<void>}`
+### `invariant.reject(predicate, message[, ...format]) -> {Promise<void>}`
 
   Do the same things as `invariant`, but returns Promise that will be rejected when predicate is true.
   This function have same API as invariant.
