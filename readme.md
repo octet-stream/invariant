@@ -9,23 +9,26 @@ Declarative errors throwing for Node.js
 
 ## API
 
-This library have three little bit different APIs:
-
-### `invariant(predicate, error)`
+### `invariant(predicate, error) -> {void}`
   - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
   - **object** error – some error object
 
-### `invatiant(predicate, message[, ...format])`
+### `invatiant(predicate, message[, ...format]) -> {void}`
 
   - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
   - **string** message – an error message
   - **any** format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
 
-### `invariant(predicate, Error, message[, ...format])`
+### `invariant(predicate, Error, message[, ...format]) -> {void}`
   - **boolean** predicate – a result of some condition. Error will threw if predicate is `true`.
   - **Function** Error – custom error class that will be used as an error constructor
   - **string** message – an error message
   - **any** format – see more about the format in a [sprintf-js documentation](https://github.com/alexei/sprintf.js)
+
+### `invariant.reject(predicate, Error, message[, ...format]) -> {Promise<void>}`
+
+  Do the same things as `invariant`, but returns Promise that will be rejected when predicate is true.
+  This function have same API as invariant.
 
 ## Example
 
@@ -40,4 +43,8 @@ This library have three little bit different APIs:
   invariant(typeof value !== "string", "The value should be a string, but given type is: %s", typeof value)
 
   invariant(typeof value !== "string", new TypeError(`The value should be a string, but given type is: ${typeof value}`))
+
+  // Will return rejected Promise instead of throw error synchronously
+  invariant.reject(typeof value !== "string", TypeError, "The value should be a string, but given type is: %s", typeof value)
+    .catch(err => console.error(err))
 ```
