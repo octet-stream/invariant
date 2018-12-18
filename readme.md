@@ -28,7 +28,7 @@ Declarative errors throwing for Node.js
 ### `invariant.reject(predicate, message[, ...format]) -> {Promise<void>}`
 
   Do the same things as `invariant`, but returns Promise that will be rejected when predicate is true.
-  This function have same API as invariant.
+  This function have same API as `invariant`.
 
 ## Example
 
