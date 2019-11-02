@@ -2,6 +2,8 @@ const test = require("ava")
 
 const invariant = require("./invariant")
 
+class SomeError extends Error {}
+
 test("Should not throw an error when predicate is false", t => {
   t.plan(1)
 
@@ -43,8 +45,6 @@ test("Should have formatted error message", t => {
 test("Should throw an error from given class instance", t => {
   t.plan(3)
 
-  class SomeError extends Error {}
-
   const trap = () => invariant(true, new SomeError("Some error message."))
 
   const err = t.throws(trap)
@@ -55,8 +55,6 @@ test("Should throw an error from given class instance", t => {
 
 test("Should throw an error with given class", t => {
   t.plan(3)
-
-  class SomeError extends Error {}
 
   const trap = () => invariant(true, SomeError, "Some %s error message.", "foo")
 

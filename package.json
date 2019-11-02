@@ -27,11 +27,11 @@
     "sprintf-js": "1.1.2"
   },
   "devDependencies": {
-    "@octetstream/eslint-config": "3.0.0",
-    "ava": "1.0.1",
-    "codecov": "3.1.0",
-    "eslint": "5.10.0",
-    "husky": "1.2.1",
-    "nyc": "13.1.0"
+    "@octetstream/eslint-config": "4.0.0",
+    "ava": "2.4.0",
+    "codecov": "3.6.1",
+    "eslint": "6.6.0",
+    "husky": "3.0.9",
+    "nyc": "14.1.1"
   }
 }
