@@ -15,13 +15,13 @@
     "lint": "node_modules/.bin/eslint test.js invariant.js",
     "test": "node_modules/.bin/ava test.js",
     "codecov": "node_modules/.bin/codecov",
-    "coverage": "node_modules/.bin/nyc yarn test",
-    "report": "yarn coverage && node_modules/.bin/nyc report --reporter=html yarn test",
-    "report:ci": "node_modules/.bin/nyc report --reporter=lcov yarn test",
-    "ci": "yarn coverage && yarn report:ci && yarn codecov"
+    "coverage": "node_modules/.bin/nyc npm test",
+    "report": "nyc npm test && node_modules/.bin/nyc report --reporter=html",
+    "report:ci": "node_modules/.bin/nyc report --reporter=lcov",
+    "ci": "npm run coverage && npm run report:ci && npm run codecov"
   },
   "engines": {
-    "node": "6.x || >= 8"
+    "node": ">= 8 < 9 || >= 10 < 11 || >= 12"
   },
   "dependencies": {
     "sprintf-js": "1.1.2"
